@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Standard Built in Objects</title>
+        <script>
+            // String
+            var name = 'John';
+            //var name = new String('John');
+
+            // length
+            console.log(name.length);
+
+            var rhyme = 'Mary had a little lamb';
+            // indexOf
+            console.log(rhyme.indexOf('john'));
+
+            // search
+            console.log(rhyme.search('lamb'));
+
+            // slice
+            console.log(rhyme.slice(4), rhyme);
+
+            // substr
+            console.log(rhyme.substr(6, 11));
+
+            // replace
+            var newRhyme = rhyme.replace('Mary', 'John');
+            console.log(rhyme, newRhyme);
+
+            // toUpperCase, toLowerCase
+            console.log(name.toLowerCase());
+            console.log(name.toUpperCase());
+
+            // concat
+            var firstname = 'John';
+            var lastname = 'Smith'
+            var fullname = firstname.concat(' ' , lastname);
+            console.log(fullname);
+
+            // trim
+            var message = '       this is a message       ';
+            console.log(message);
+            console.log(message.trim());
+
+            // Date
+            var now = new Date();
+            console.log(now);
+            console.log(now.toDateString());
+            console.log(now.getDate());
+            console.log(now.getFullYear());
+        </script>
+    </head>
+    <body>
+        <h1>Standard Built in Objects</h1>
+    </body>
+</html>

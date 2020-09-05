@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    background-color: beige;
+    padding: 10px;
+}
+
+input {
+    width: 60%;
+    height: 35px;
+}
+
+button {
+    height: 35px;
+    margin-left: 10px;
+}
+
+ul.task-list {
+    width: 100%;
+    background-color: bisque;
+    margin: 10px 0 0;
+    padding: 0;
+    list-style: none;
+    border-top: 1px solid gray;
+}
+
+li {
+    text-align: left;
+    padding: 10px;
+    font-size: 20px;
+    border-bottom: 1px solid gray;
+    cursor: pointer;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Coding Challenge</title>
+        <script>
+            /*
+            Problem Statement:
+            Write a program to return bmi (body mass index) of a person.
+
+            Solution Steps:
+            Step 1:
+            Create a person constructor with following props - 
+            Props - name, age, weight & height
+            Method - getBMI
+            Step 2:
+            Create different person objects and based on bmi results show the output
+            If bmi < 18.5 - Person is thin
+            If bmi > 18.5 && bmi < 25 - Person is healthy
+            If bmi > 25 - Person is overweight
+            */
+            /*
+            GOOD LUCK :)
+            */
+
+            function Person(name, age, weight, height) {
+                this.name = name;
+                this.age = age;
+                this.weight = weight;
+                this.height = height;
+
+                this.getBmi = function() {
+                    var bmi = this.weight / (this.height/100 * this.height/100);
+                    return bmi;
+                }
+            }
+
+            function bmiMeans(bmi) {
+                if (bmi < 18.5) {
+                    console.log('Person is thin ' + bmi);
+                } else if (bmi > 18.5 && bmi < 25) {
+                    console.log('Person is healthy ' + bmi);
+                } else if (bmi > 25) {
+                    console.log('Person is overweight ' + bmi);
+                }
+            }
+
+            var john = new Person('John', 30, 100, 180);
+            bmiMeans(john.getBmi());
+            var linda = new Person('Linda', 25, 55, 165);
+            bmiMeans(linda.getBmi());
+        </script>
+    </head>
+    <body>
+        <h1>Coding Challenge</h1>
+    </body>
+</html>

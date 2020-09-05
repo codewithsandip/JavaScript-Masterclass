@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Function Return Values</title>
+        <script>
+
+            function greeter(name) {
+                //return 'Hello ' + name;
+            }
+
+            var output = greeter('John');
+            console.log(output);
+
+            function toCelsius(input) {
+                var output;
+                output = (input - 32) * 5 / 9;
+                return output;
+            }
+
+            console.log(toCelsius(40));
+
+            function logMessage() {
+                console.log('Calling greeter');
+                var output = greeter('Linda');
+                console.log(output);
+            }
+
+            logMessage();
+
+        </script>
+    </head>
+    <body>
+        <h1>Function Return Values</h1>
+    </body>
+</html>

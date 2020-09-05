@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Creating Objects</title>
+        <script>
+
+            /*var productName = 'iPhone';
+            var productPrice = 2000;
+            var productReview = 4.5;
+
+            var productName02 = 'Tablet';
+            var procuctPrice02 = 1000;
+            var productReview02 = 4;
+
+            function updateReviews() {
+                var x = 10;
+                productReview = productReview + 0.4;
+            }
+
+            function updateReviews02() {
+                productReview02 = productReview02 + 0.4;
+            }*/
+
+            // Object constructor
+            // long hand method
+            /*var product = new Object();
+
+            product.name = 'iPhone';
+            product.price = 2000;
+            product.rating = 4.5;
+
+            var product02 = new Object();
+            product.name = 'Tablet';
+            product.price = 1000;
+            product.rating = 4;
+
+            console.log(product);
+            console.log(product.name);*/
+
+            // short hand method
+            // object literals
+
+            var product = {
+                name: 'iPhone',
+                price: 2000,
+                rating: 4.5,
+                updateRating: function(val) {
+                    this.rating += val;
+                }
+            }
+
+            var product01 = {
+                name: 'Tablet',
+                price: 1000,
+                rating: 4,
+                updateRating: function(val) {
+                    this.rating += val;
+                }
+            }
+
+            product.updateRating(0.3);
+            console.log(product);
+            
+
+            //console.log(product.name);
+            //console.log(product01.name);
+
+            //product.rating += 0.3;
+
+            //console.log(product.rating);
+
+        </script>
+    </head>
+    <body>
+        <h1>Creating Objects</h1>
+    </body>
+</html>

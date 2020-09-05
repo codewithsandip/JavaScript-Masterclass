@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Greeter</title>
+        <style>
+            .light {
+                background: white;
+                color: black;
+            }
+
+            .dark {
+                background: gray;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="element">Hello World!</h1>
+
+        <div>
+            Theme:
+            <button onclick="changeTheme('light')">Light</button>
+            <button onclick="changeTheme('dark')">Dark</button>
+        </div>
+
+        <script>
+            var name = prompt("Hey, whats your name");
+            var element = document.getElementById("element");
+            element.innerHTML = "Hello " + name;
+
+            function changeTheme(theme) {
+                document.body.className = "";
+                document.body.classList.add(theme);
+            }
+        </script>
+    </body>
+</html>

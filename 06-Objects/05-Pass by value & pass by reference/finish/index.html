@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pass by value & reference</title>
+        <script>
+
+            // pass by value
+            var x = 10;
+
+            function addOne(value) {
+                value = value + 1;
+            }
+
+            console.log('before adding one ', x);
+            addOne(x);
+            console.log('after adding one ', x);
+
+            // pass by reference
+            var person = {
+                name: 'John',
+                age: 30
+            }
+
+            function addOneToAge(obj) {
+                obj.name = 'Linda';
+                obj.age = obj.age + 1;
+            }
+
+            console.log('before adding one to age ', person);
+            addOneToAge(person);
+            console.log('after adding one to age ', person);
+
+        </script>
+    </head>
+    <body>
+        <h1>Pass by value & reference</h1>
+    </body>
+</html>

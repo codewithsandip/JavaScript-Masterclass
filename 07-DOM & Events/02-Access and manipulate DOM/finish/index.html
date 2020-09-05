@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Access and manipulate DOM</title>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <header>
+            <h2 id="title" class="task">My Tasks</h2>
+            <form>
+                <input id="taskInput"
+                    placeholder="What do you want to do today..." />
+                <button>Add One</button>
+            </form>
+        </header>
+        <section>
+            <ul id="tasks" class="task-list">
+                <li class="task">
+                    Exercise
+                </li>
+                <li class="task">
+                    Listen Audio Book
+                </li>
+                <li class="task">
+                    Meditate
+                </li>
+                <li class="task">
+                    Practice Guitar
+                </li>
+            </ul>
+        </section>
+
+        <script>
+            // targetting elements
+            //var element = document.getElementById('title');
+            //console.log(element);
+
+            //var elements = document.getElementsByClassName('task');
+            //console.log(elements);
+
+            //var elements = document.getElementsByTagName('li');
+            //console.log(elements);
+
+            // querySelector methods
+            //var element = document.querySelector('#title');
+            //console.log(element);
+
+            //var element = document.querySelector('.task');
+            //console.log(element);
+
+            //var element = document.querySelector('h2');
+            //console.log(element);
+
+            //var elements = document.querySelectorAll('.task');
+            //console.log(elements);
+
+            //var elements = document.querySelectorAll('.task-list .task');
+            //console.log(elements);
+
+            // manipulating text nodes
+
+            /*var element = document.querySelector('h2');
+            console.dir(element);
+            element.innerHTML = "Todays Tasks";
+            console.log(element.outerHTML);
+            element.outerHTML = '<p>My Tasks</p>';*/
+
+            // manipulating classes
+            /*var elements = document.querySelector('.task-list');
+            elements.classList.add('tasks');
+            console.log(elements.classList);
+            var taskEl = document.querySelector('.task');
+            taskEl.classList.add('red');
+            document.querySelector('h2').classList.remove('red');*/
+
+            // style property
+            /*var element = document.querySelector('h2');
+            element.style.color = 'red';
+            element.style.backgroundColor = 'gray';*/
+
+            /*var element = document.querySelector('h2');
+            console.log(element.getAttribute('id'));
+
+            element.setAttribute('id', 'heading');
+
+            console.log(element.hasAttribute('class'));*/
+
+
+            // create elements using JS
+            var taskEl = document.createElement('li');
+            var taskTextNode = document.createTextNode('Practice Piano');
+            taskEl.appendChild(taskTextNode);
+            console.log(taskEl);
+
+            document.querySelector('#tasks').append(taskEl);
+
+
+        </script>
+    </body>
+</html>

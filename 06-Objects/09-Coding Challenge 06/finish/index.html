@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Coding Challenge</title>
+        <script>
+            /*
+            Problem Statement:
+            Solve each of the exercises below using this array.
+            var names = ['John', 'Jane', 'Sonia', 'Linda']
+
+            Exercises:
+            01: Using a loop, iterate through above array and 
+            console.log all of the names.
+            02: Write the statement to remove 'John' from the array.
+            03: Write the statement to remove 'Linda' from the array.
+            04: Write the statement to add 'John' to the front of 
+            the array.
+            05: Write the statement to add 'Linda' to the end of 
+            the array.
+            06: Write the statement to make a copy of the array.
+            07: Write a statement to add true after 'Sonia'.
+            08: Write a statement to add false after 'Jane'.
+            09: Write a loop and exit the loop when the value is 
+            equals to true.
+            10: Write a loop and continue the loop if the value is 
+            string, log each value.
+            11: Write a statement to find if 'Alex' exist in an array.
+
+            GOOD LUCK :)
+            */
+
+            var names = ['John', 'Jane', 'Sonia', 'Linda'];
+
+            // 01: Using a loop, iterate through above array and 
+            // console.log all of the names.
+
+            for (var i = 0; i < names.length; i++) {
+                console.log(names[i]);
+            }
+
+            // 02: Write the statement to remove 'John' from the array.
+            var element = names.shift();
+            console.log(element, names);
+
+            // 03: Write the statement to remove 'Linda' from the array.
+            var element = names.pop();
+            console.log(element, names);
+
+            // 04: Write the statement to add 'John' to the front of 
+            // the array.
+            var length = names.unshift('John');
+            console.log(length, names);
+
+            // 05: Write the statement to add 'Linda' to the end of 
+            // the array.
+            var length = names.push('Linda');
+            console.log(length, names);
+
+            //06: Write the statement to make a copy of the array.
+            var clonedNames = names.slice();
+            console.log(clonedNames, names);
+
+            // 07: Write a statement to add true after 'Sonia'.
+            var element = names.splice(3, 0, true);
+            console.log(element, names);
+
+            // 08: Write a statement to add false after 'Jane'.
+            var element = names.splice(2, 0, false);
+            console.log(element, names);
+
+            //09: Write a loop and exit the loop when the value is 
+            //equals to true.
+            for (var i = 0; i < names.length; i++) {
+                if (names[i] === true) {
+                    break;
+                }
+                console.log(names[i]);
+            }
+
+            console.log('end of for loop');
+
+            //10: Write a loop and continue the loop if the value is 
+            //string, log each value.
+
+            for (var i = 0; i < names.length; i++) {
+                if (typeof names[i] !== 'string') {
+                    continue;
+                }
+                console.log(names[i]);
+            }
+
+            //11: Write a statement to find if 'Alex' exist in an array.
+            var isExist = names.indexOf('Alex');
+            console.log(isExist === -1 ? 'Alex doesnt exist' : 'Alex exist');
+
+
+        </script>
+    </head>
+    <body>
+        <h1>Coding Challenge</h1>
+    </body>
+</html>

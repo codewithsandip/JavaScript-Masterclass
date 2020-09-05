@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Loops and Iterations</title>
+        <script>
+            // for loop
+            for (var i = 0; i <= 10; i++) {
+                console.log(i);
+            }
+
+            console.log('end loop');
+
+            // i = 0, 0 < 10, log the value of i
+            // i = 1, 1 < 10, log the value of i
+            // ...
+            // i = 10, 10 < 10, 
+
+            // while loop
+            var i = 0;
+            while (i <= 10) {
+                // code block
+                console.log('while loop ', i);
+                i++;
+            }
+
+            // looping through arrays
+            var names = ['John', 'Jane', 'Sonia'];
+            
+            for (var i = 0; i < names.length; i++) {
+                console.log(names[i]);
+            }
+
+            // continue statement
+            var names = ['John', 30, 'Developer', true, 'Linda', 25, 'Tester', false];
+
+            for (var i = 0; i < names.length; i++) {
+                if (typeof names[i] !== 'string') {
+                    continue;
+                }
+                console.log('continue ', names[i]);
+            }
+
+            // break statement
+            var names = ['John', 30, 'Developer', true, 'Linda', 25, 'Tester', false];
+
+            for (var i = 0; i < names.length; i++) {
+                if (names[i] === true) {
+                    break;
+                }
+                console.log('break ', names[i]);
+            }
+
+            console.log('end of for loop');
+               
+
+        </script>
+    </head>
+    <body>
+        <h1>Loops and Iterations</h1>
+    </body>
+</html>

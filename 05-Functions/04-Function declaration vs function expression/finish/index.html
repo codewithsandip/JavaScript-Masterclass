@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Function declaration vs expression</title>
+        <script>
+
+            /*greeter();
+
+            // function declaration/statement
+            function greeter() {
+                console.log('Hello John');
+            }*/
+            
+            // hoisting
+
+            // function expression
+            var ask = function (question, name) {
+                var response = confirm(name + ', ' + question);
+                console.log(response);
+            }
+
+            ask('Do you like JavaScript?', 'John');
+
+        </script>
+    </head>
+    <body>
+        <h1>Function declaration vs expression</h1>
+    </body>
+</html>

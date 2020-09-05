@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Coding Challenge</title>
+        <script>
+            /*
+            Problem Statement:
+            Write a program to calculate simple interest on loan.
+            This will take three arguments - 
+            Principal amount
+            Interest rate
+            Term of the loan
+
+            The program should return Interest value and total amount 
+            with interest value.
+
+            Solution Steps:
+            Step 1:
+            Write a function which will take three arguments
+            Step 2:
+            Write a logic to calculate simple interest
+            Step 3:
+            Return the output value of interest
+            Step 4:
+            Print the interest value and total value to the console.
+            */
+            /*
+            GOOD LUCK :)
+            */
+
+            function calculateSimpleInterest(principal, interest, term) {
+                var output = (principal * interest * term) / 100;
+                return output;
+            }
+
+            var principal = 1000;
+            var interest = 2;
+            var term = 5;
+
+            var calculatedIntest = calculateSimpleInterest(principal, interest, term);
+
+            console.log('Interest: ', calculatedIntest);
+            console.log('Total: ', principal + calculatedIntest);
+        </script>
+    </head>
+    <body>
+        <h1>Coding Challenge</h1>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Truthy & Falsy values and Strict Equality operator</title>
+        <script>
+            var count = 0;
+
+            if (count || count == 0) {
+                count++;
+            } else {
+                console.log('Count is not defined');
+            }
+
+            console.log('Count ', count);
+
+            // strict equality operator === !==
+            var time = '12';
+
+            if (time === 12) {
+                console.log('Its 12 pm');
+            } else {
+                console.log('Some other time');
+            }
+
+        </script>
+    </head>
+    <body>
+        <h1></h1>
+    </body>
+</html>

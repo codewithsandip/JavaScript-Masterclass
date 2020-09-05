@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Function scope</title>
+        <script>
+            
+            var name = "John";
+            var age = 30;
+
+            function greeter() {
+                var name = "Linda";
+                var age = 20;
+                var message = "Hello Linda";
+
+                console.log(name, age, message);
+            }
+
+            function ask() {
+                var question = "Do you like JavaScript?";
+
+                //console.log(message);
+            }
+
+            //console.log(message);
+
+            console.log(name, age);
+
+            greeter();
+
+            ask();
+
+        </script>
+    </head>
+    <body>
+        <h1>Function scope</h1>
+    </body>
+</html>
